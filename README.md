@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Mikael-duru/Single-Price-Grid-Component.git](https://github.com/Mikael-duru/Single-Price-Grid-Component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://mikael-duru.github.io/Single-Price-Grid-Component/](https://mikael-duru.github.io/Single-Price-Grid-Component/)
 
 ## My process
 

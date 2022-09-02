@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  /* Primary Colors */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral Colors */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+/* General Styles */
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* Main Starts */
+main {
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.price-grid {
+  width: 350px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+
+/* Invite Section */
+.price-grid .invite {
+  background-color: #fff;
+  padding: 1.7rem 1.4rem 1.9rem;
+  border-radius: .4rem .4rem 0 0;
+}
+
+.price-grid .invite .invite-heading {
+  font-size: 1.43rem;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 1.4rem;
+}
+
+.price-grid .invite .offer {
+  font-size: 1.06rem;
+  color: var(--bright-yellow);
+  margin-bottom: 1rem;
+}
+
+.price-grid .invite p {
+  font-size: 1rem;
+  color: var(--grayish-blue);
+  line-height: 1.6;
+}
+
+
+/* Subscription Section */
+.price-grid .overlay {
+  background: var(--cyan);
+  mix-blend-mode: multiply;
+}
+
+.price-grid .subscription {
+  padding: 1.5rem;
+}
+
+.price-grid .subscription .subscription-heading {
+  font-size: 1.26rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.price-grid .subscription .price {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  font-size: 37px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.price-grid .subscription .price .duration {
+  font-size: 1.12rem;
+  font-weight: 400;
+  mix-blend-mode: soft-light;
+}
+
+.price-grid .subscription p {
+  font-size: 1.12rem;
+  margin: .3rem 0 1.7rem;
+  color: var(--light-gray);
+}
+
+.price-grid .subscription .btn {
+  border: none;
+  width: 100%;
+  padding: .86rem 5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--bright-yellow);
+  border-radius: .4rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+
+
+/* Why us */
+.price-grid .why-us {
+  background-color: var(--cyan);
+  padding: 1.5rem;
+  border-radius: 0 0 .4rem .4rem;
+}
+
+.price-grid .why-us .why-us-heading {
+  font-size: 1.26rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+}
+
+.price-grid .why-us .reasons .reason-list {
+  font-size: 1rem;
+  color: var(--light-gray);
+  mix-blend-mode: hard-light;
+}
+
+.price-grid .why-us .reasons .reason-list:not(:last-of-type) {
+  margin-bottom: .2rem;
+}
+
+/* Main Ends */
+
+
+/* Footer Starts */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Footer Ends */
+
+
+/* Responsive Styles */
+
+/* screen size above 768px */
+@media screen and (min-width: 768px) {
+  .price-grid {
+    width: 725px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .price-grid .invite {
+    grid-column: 1 / 3;
+    padding: 3rem;
+    border-radius: .7rem .7rem 0 0;
+  }
+  
+  .price-grid .invite .invite-heading {
+    margin-bottom: 2rem;
+  }
+  
+  .price-grid .invite p {
+    font-size: 1.12rem;
+  }
+  
+  .price-grid .overlay,
+  .price-grid .subscription {
+    grid-column: 1 / 2;
+    border-radius: 0 0 0 .7rem;
+  }
+  
+  .price-grid .subscription,
+  .price-grid .why-us {
+    padding: 3rem;
+  }
+  
+  .price-grid .subscription .subscription-heading {
+    margin-bottom: 1.1rem;
+  }
+  
+  .price-grid .subscription p {
+    margin: .5rem 0 2rem;
+  }
+  
+  .price-grid .subscription .btn {
+    padding: 1rem 5rem;
+  }
+  
+  .price-grid .why-us {
+    grid-column: 2 / 3;
+    border-radius: 0 0 .7rem 0;
+  }
+}

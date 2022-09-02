@@ -80,12 +80,9 @@ main {
 
 
 /* Subscription Section */
-.price-grid .overlay {
+.price-grid .subscription {
   background: var(--cyan);
   mix-blend-mode: multiply;
-}
-
-.price-grid .subscription {
   padding: 1.5rem;
 }
 
@@ -127,7 +124,7 @@ main {
   font-weight: 700;
   background-color: var(--bright-yellow);
   border-radius: .4rem;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, .2);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, .2);
   cursor: pointer;
 }
 
@@ -196,7 +193,6 @@ main {
     font-size: 1.12rem;
   }
   
-  .price-grid .overlay,
   .price-grid .subscription {
     grid-column: 1 / 2;
     border-radius: 0 0 0 .7rem;
@@ -208,11 +204,11 @@ main {
   }
   
   .price-grid .subscription .subscription-heading {
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.2rem;
   }
   
   .price-grid .subscription p {
-    margin: .5rem 0 2rem;
+    margin: .5rem 0 2.1rem;
   }
   
   .price-grid .subscription .btn {
@@ -222,5 +218,9 @@ main {
   .price-grid .why-us {
     grid-column: 2 / 3;
     border-radius: 0 0 .7rem 0;
+  }
+  
+  .price-grid .why-us .reasons .reason-list:not(:last-of-type) {
+    margin-bottom: .3rem;
   }
 }
